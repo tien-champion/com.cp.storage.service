@@ -97,13 +97,13 @@ public class PlayerDataKeySO : BaseDataTSO<PlayerInventory> // -> Generic class 
 Tiếp theo tạo file SO trong thư mục Resources/LocalData (hoặc thư mục bạn đã đặt). Bạn sẽ thấy giao diện để chỉnh sửa realtime trên Inspector như thế này:
 
 <p align="center">
-  <img src="demo-data-key.png" width="500"/>
+  <img src="Textures/demo-data-key.png" width="500"/>
 </p>
 
 Sau khi Save bạn sẽ có 2 file như thế này:
 
 <p align="center">
-  <img src="save-image.png" width="500"/>
+  <img src="Textures/save-image.png" width="500"/>
 </p>
 
 Sau đó, ở bất kỳ đâu bạn có truy cập đến class SO này thông qua StorageService:
