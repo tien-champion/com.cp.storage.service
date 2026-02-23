@@ -1,3 +1,10 @@
+## [1.0.4](https://github.com/tien-champion/com.cp.storage.service/compare/v1.0.3...v1.0.4) (2026-02-23)
+
+
+### Bug Fixes
+
+* fix README ([ea0de0c](https://github.com/tien-champion/com.cp.storage.service/commit/ea0de0c6d77012647c9a20cbe2a6f47e009f0041))
+
 ## [1.0.3](https://github.com/tien-champion/com.cp.storage.service/compare/v1.0.2...v1.0.3) (2026-02-23)
 
 
