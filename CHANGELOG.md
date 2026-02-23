@@ -1,3 +1,10 @@
+## [1.0.2](https://github.com/tien-champion/com.cp.storage.service/compare/v1.0.1...v1.0.2) (2026-02-23)
+
+
+### Bug Fixes
+
+* fix git URL box ([806039c](https://github.com/tien-champion/com.cp.storage.service/commit/806039caf2afa4c258a01bc4f3208f8537ee6a6c))
+
 ## [1.0.1](https://github.com/tien-champion/com.cp.storage.service/compare/v1.0.0...v1.0.1) (2026-02-23)
 
 
