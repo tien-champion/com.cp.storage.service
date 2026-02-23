@@ -5,5 +5,8 @@
   "author": {
     "name": "Champion Team",
     "email": "tientv.dev@championgamestudio.com"
+  },
+  "dependencies": {
+    "com.unity.nuget.newtonsoft-json": "3.2.1"
   }
 }
