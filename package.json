@@ -1,0 +1,12 @@
+{
+  "name": "com.cp.storage.service",
+  "version": "1.0.0",
+  "displayName": "Champion Storage Service",
+  "author": {
+    "name": "Champion Team",
+    "email": "tientv.dev@championgamestudio.com"
+  },
+  "dependencies": {
+    "com.unity.nuget.newtonsoft-json": "3.2.1"
+  }
+}
