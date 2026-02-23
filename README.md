@@ -125,4 +125,4 @@ StorageService.Get<PlayerDataKeySO>().AddCurrency(new Currency()
 - Sử dụng event hoặc callback để thông báo khi dữ liệu thay đổi, giúp cập nhật UI hoặc các hệ thống liên quan một cách hiệu quả.
 
 ## Dependencies
-- `com.unity.nuget.newtonsoft-json`: Serialize/Deserialize dữ liệu thành JSON, hỗ trợ mã hóa và giải mã dữ liệu một cách dễ dàng.
+- `"com.unity.nuget.newtonsoft-json": "3.2.1"`: Serialize/Deserialize dữ liệu thành JSON, hỗ trợ mã hóa và giải mã dữ liệu một cách dễ dàng.
