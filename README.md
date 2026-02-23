@@ -48,7 +48,7 @@ public class GameManager : MonoBehaviour
 {
     private void Awake()
     {
-        var storages = Resources.LoadAll<BaseDataSO>("LocalData"); // Thay bằng đường dẫn folder chứa file data (ScriptableObject) của bạn
+        var storages = Resources.LoadAll<BaseDataSO>("LocalData"); // Thay bằng đường dẫn folder chứa file data của bạn
         foreach (var storage in storages)
         {
             StorageService.Register(storage);
