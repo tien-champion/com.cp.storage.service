@@ -51,6 +51,7 @@ public class GameManager : MonoBehaviour
         var storages = Resources.LoadAll<BaseDataSO>("LocalData"); // Thay bằng đường dẫn folder chứa file data của bạn
         foreach (var storage in storages)
         {
+            storage.Load(); //Load dữ liệu được lưu hoặc tạo mới, các giá trị set trên SO sẽ là giá trị default của Data đó
             StorageService.Register(storage);
         }
     }
