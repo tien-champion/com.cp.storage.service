@@ -13,7 +13,9 @@ namespace Champion
 
         public override void Load()
         {
-            _Data = LocalDataSystem.Load<T>(this.name, Encrypt);
+            T saveData = LocalDataSystem.Load<T>(this.name, Encrypt);
+            if (saveData == null) Save();
+            else _Data = saveData;
         }
 
         public override void Delete()

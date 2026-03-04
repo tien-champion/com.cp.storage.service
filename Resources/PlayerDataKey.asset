@@ -16,8 +16,8 @@ MonoBehaviour:
   _Data:
     Currencies:
     - Type: 0
-      Qty: 850175892
+      Qty: 0
     Items:
-    - Id: sword_1
-      Qty: 1
+    - Id: 
+      Qty: 0
       Params: 
