@@ -1,3 +1,10 @@
+# [1.1.0](https://github.com/tien-champion/com.cp.storage.service/compare/v1.0.9...v1.1.0) (2026-03-04)
+
+
+### Features
+
+* save default data, update README ([eb77734](https://github.com/tien-champion/com.cp.storage.service/commit/eb77734fbf198b6689179fe0aae70078ec742419))
+
 ## [1.0.9](https://github.com/tien-champion/com.cp.storage.service/compare/v1.0.8...v1.0.9) (2026-02-23)
 
 
