@@ -1,3 +1,10 @@
+## [1.1.1](https://github.com/tien-champion/com.cp.storage.service/compare/v1.1.0...v1.1.1) (2026-03-05)
+
+
+### Bug Fixes
+
+* Missing reference CustomEditor ([9ad3e33](https://github.com/tien-champion/com.cp.storage.service/commit/9ad3e3374913e953008c37eca535f751e2ac9dff))
+
 # [1.1.0](https://github.com/tien-champion/com.cp.storage.service/compare/v1.0.9...v1.1.0) (2026-03-04)
 
 
