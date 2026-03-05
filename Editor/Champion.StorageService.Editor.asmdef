@@ -1,0 +1,18 @@
+{
+    "name": "Champion.StorageService.Editor",
+    "rootNamespace": "",
+    "references": [
+        "GUID:a9fca978e3e8f254bb5d0b90b1e0a272"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

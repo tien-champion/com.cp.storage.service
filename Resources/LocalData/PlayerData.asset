@@ -14,15 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Encrypt: 1
   Profile:
-    Name: Player_123
-    Exp: 1000
-    EquipItems:
-    - assdfasd
+    Name: 
+    Exp: 0
+    EquipItems: []
   Inventory:
-    Currencies:
-    - Type: 0
-      Qty: 0
-    Items:
-    - Id: sword
-      Qty: 0
-      Params: ffff
+    Currencies: []
+    Items: []
