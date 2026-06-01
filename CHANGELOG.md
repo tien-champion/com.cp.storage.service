@@ -1,3 +1,10 @@
+# [1.2.0](https://github.com/tien-champion/com.cp.storage.service/compare/v1.1.1...v1.2.0) (2026-06-01)
+
+
+### Features
+
+* Reset & Default ([4249a2c](https://github.com/tien-champion/com.cp.storage.service/commit/4249a2c62408b7a66eb88ecab3beef688c9e0a08))
+
 ## [1.1.1](https://github.com/tien-champion/com.cp.storage.service/compare/v1.1.0...v1.1.1) (2026-03-05)
 
 
