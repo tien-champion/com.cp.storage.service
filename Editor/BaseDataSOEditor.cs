@@ -30,6 +30,13 @@ namespace Champion
                 Debug.Log("[BaseDataSO] Loaded");
             }
 
+            if (GUILayout.Button("Reset", GUILayout.Height(25)))
+            {
+                dataSo.ResetData();
+                EditorUtility.SetDirty(dataSo);
+                Debug.Log("[BaseDataSO] Reset!");
+            }
+
             if (GUILayout.Button("Delete", GUILayout.Height(25)))
             {
                 if (EditorUtility.DisplayDialog(

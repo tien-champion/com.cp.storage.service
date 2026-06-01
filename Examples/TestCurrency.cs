@@ -8,7 +8,7 @@
     }
 
     [System.Serializable]
-    public class Currency
+    public class TestCurrency
     {
         public CurrencyType Type;
         public int Qty;

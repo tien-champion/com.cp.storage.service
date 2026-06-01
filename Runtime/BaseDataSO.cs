@@ -17,5 +17,10 @@ namespace Champion
         public virtual void Delete()
         {
         }
+
+        public virtual void ResetData()
+        {
+            
+        }
     }
 }

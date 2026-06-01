@@ -3,13 +3,13 @@
 namespace Champion
 {
     [CreateAssetMenu(fileName = "PlayerDataKey", menuName = "PlayerDataKey")]
-    public class PlayerDataTSO : BaseDataTSO<PlayerInventory>
+    public class PlayerDataTSO : BaseDataTSO<TestPlayerInventory>
     {
-        public void AddCurrency(Currency currency)
+        public void AddCurrency(TestCurrency testCurrency)
         {
-            if (!this._Data.Currencies.Contains(currency))
+            if (!this._Data.Currencies.Contains(testCurrency))
             {
-                this._Data.Currencies.Add(currency);
+                this._Data.Currencies.Add(testCurrency);
                 this.Save();
                 // Raise event...
             }

@@ -48,9 +48,7 @@ namespace Champion
 
                 AtomicWrite(path, backupPath, finalContent);
 
-#if UNITY_EDITOR
                 Debug.Log($"[DataSystem] Saved: {path}");
-#endif
             }
             catch (Exception e)
             {

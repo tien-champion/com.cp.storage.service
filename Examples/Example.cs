@@ -18,7 +18,7 @@ namespace Champion
         {
             if (Input.GetKeyDown(KeyCode.Space))
             {
-                StorageService.Get<PlayerDataTSO>().AddCurrency(new Currency()
+                StorageService.Get<PlayerDataTSO>().AddCurrency(new TestCurrency()
                 {
                     Qty = UnityEngine.Random.Range(0, int.MaxValue)
                 });

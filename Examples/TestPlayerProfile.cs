@@ -3,7 +3,7 @@
 namespace Champion
 {
     [System.Serializable]
-    public class PlayerProfile
+    public class TestPlayerProfile
     {
         public string Name;
         public int Exp;

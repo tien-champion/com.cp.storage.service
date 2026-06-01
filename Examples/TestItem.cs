@@ -1,7 +1,7 @@
 ﻿namespace Champion
 {
     [System.Serializable]
-    public class Item
+    public class TestItem
     {
         public string Id;
         public int Qty;

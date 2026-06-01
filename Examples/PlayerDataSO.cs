@@ -5,8 +5,8 @@ namespace Champion
     [CreateAssetMenu(fileName = "PlayerData", menuName = "SO/Data/PlayerData")]
     public class PlayerDataSO : BaseDataSO
     {
-        public PlayerProfile Profile;
-        public PlayerInventory Inventory;
+        public TestPlayerProfile Profile;
+        public TestPlayerInventory Inventory;
 
         public override void Save()
         {
@@ -16,8 +16,8 @@ namespace Champion
 
         public override void Load()
         {
-            Profile = LocalDataSystem.Load<PlayerProfile>("player-profile", Encrypt);
-            Inventory = LocalDataSystem.Load<PlayerInventory>("player-inventory", Encrypt);
+            Profile = LocalDataSystem.Load<TestPlayerProfile>("player-profile", Encrypt);
+            Inventory = LocalDataSystem.Load<TestPlayerInventory>("player-inventory", Encrypt);
         }
 
         public override void Delete()
