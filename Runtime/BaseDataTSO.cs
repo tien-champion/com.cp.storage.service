@@ -1,15 +1,27 @@
-﻿using Newtonsoft.Json;
+﻿using System;
+using Newtonsoft.Json;
 using UnityEngine;
 
 namespace Champion
 {
     public class BaseDataTSO<T> : BaseDataSO where T : class, new()
     {
-        [SerializeField] protected T _Default, _Data;
+        [SerializeField] protected T _Data;
+        [SerializeField] protected T _Default;
+
+#if UNITY_EDITOR
+        [SerializeField] protected T _DataTest;
+#endif
 
         public override void Save()
         {
             LocalDataSystem.Save(this.name, _Data, Encrypt);
+        }
+
+        public override async void SaveAsync(Action<bool> result = null)
+        {
+            bool success = await LocalDataSystem.SaveAsync(this.name, _Data, Encrypt);
+            result?.Invoke(success);
         }
 
         public override void Load()
@@ -40,5 +52,12 @@ namespace Champion
         {
             LocalDataSystem.Delete(this.name);
         }
+
+#if UNITY_EDITOR
+        public override void SetupTest()
+        {
+            _Data = DeepCopy(_DataTest);
+        }
+#endif
     }
 }

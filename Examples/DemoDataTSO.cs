@@ -3,7 +3,7 @@
 namespace Champion
 {
     [CreateAssetMenu(fileName = "PlayerDataKey", menuName = "PlayerDataKey")]
-    public class PlayerDataTSO : BaseDataTSO<TestPlayerInventory>
+    public class DemoDataTSO : BaseDataTSO<TestPlayerInventory>
     {
         public void AddCurrency(TestCurrency testCurrency)
         {

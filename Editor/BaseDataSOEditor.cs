@@ -8,7 +8,7 @@ namespace Champion
     {
         public override void OnInspectorGUI()
         {
-            DrawDefaultInspector();
+            DrawPropertiesWithSeparator();
 
             GUILayout.Space(10);
 
@@ -37,6 +37,13 @@ namespace Champion
                 Debug.Log("[BaseDataSO] Reset!");
             }
 
+            if (GUILayout.Button("Setup Test", GUILayout.Height(25)))
+            {
+                dataSo.SetupTest();
+                EditorUtility.SetDirty(dataSo);
+                Debug.Log("[BaseDataSO] Setup Test applied");
+            }
+
             if (GUILayout.Button("Delete", GUILayout.Height(25)))
             {
                 if (EditorUtility.DisplayDialog(
@@ -59,6 +66,41 @@ namespace Champion
             EditorGUILayout.HelpBox(
                 "Persistent Path:\n" + Application.persistentDataPath,
                 MessageType.Info);
+        }
+
+        private void DrawPropertiesWithSeparator()
+        {
+            serializedObject.Update();
+
+            SerializedProperty property = serializedObject.GetIterator();
+            bool enterChildren = true;
+            bool separatorDrawn = false;
+
+            while (property.NextVisible(enterChildren))
+            {
+                enterChildren = false;
+
+                if (!separatorDrawn && property.name == "_Default")
+                {
+                    DrawSeparator();
+                    separatorDrawn = true;
+                }
+
+                using (new EditorGUI.DisabledScope(property.propertyPath == "m_Script"))
+                {
+                    EditorGUILayout.PropertyField(property, true);
+                }
+            }
+
+            serializedObject.ApplyModifiedProperties();
+        }
+
+        private void DrawSeparator()
+        {
+            GUILayout.Space(6);
+            Rect rect = EditorGUILayout.GetControlRect(false, 1);
+            EditorGUI.DrawRect(rect, new Color(0.5f, 0.5f, 0.5f, 1));
+            GUILayout.Space(4);
         }
     }
 }

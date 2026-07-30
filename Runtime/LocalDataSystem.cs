@@ -2,6 +2,7 @@ using System;
 using System.IO;
 using System.Security.Cryptography;
 using System.Text;
+using System.Threading.Tasks;
 using UnityEngine;
 using Newtonsoft.Json;
 
@@ -19,6 +20,8 @@ namespace Champion
     {
         private const string EXTENSION = ".json";
         private const string BACKUP_EXTENSION = ".bak";
+        
+        public static bool LOG_SAVE = false;
 
         private static string BasePath => Application.persistentDataPath;
 
@@ -38,6 +41,22 @@ namespace Champion
             T data,
             DataEncryptionType encryption = DataEncryptionType.Json)
         {
+            TrySave(key, data, encryption);
+        }
+
+        public static Task<bool> SaveAsync<T>(
+            string key,
+            T data,
+            DataEncryptionType encryption = DataEncryptionType.Json)
+        {
+            return Task.Run(() => TrySave(key, data, encryption));
+        }
+
+        private static bool TrySave<T>(
+            string key,
+            T data,
+            DataEncryptionType encryption)
+        {
             try
             {
                 string path = GetPath(key);
@@ -48,11 +67,13 @@ namespace Champion
 
                 AtomicWrite(path, backupPath, finalContent);
 
-                Debug.Log($"[DataSystem] Saved: {path}");
+                if(LOG_SAVE) Debug.Log($"[DataSystem] Saved: {path}");
+                return true;
             }
             catch (Exception e)
             {
                 Debug.LogError($"[DataSystem] Save failed: {e}");
+                return false;
             }
         }
 

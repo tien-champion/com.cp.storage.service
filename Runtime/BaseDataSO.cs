@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using System;
+using UnityEngine;
 
 namespace Champion
 {
@@ -8,6 +9,11 @@ namespace Champion
 
         public virtual void Save()
         {
+        }
+
+        public virtual void SaveAsync(Action<bool> result = null)
+        {
+            
         }
 
         public virtual void Load()
@@ -20,7 +26,12 @@ namespace Champion
 
         public virtual void ResetData()
         {
-            
+
+        }
+
+        public virtual void SetupTest()
+        {
+
         }
     }
 }

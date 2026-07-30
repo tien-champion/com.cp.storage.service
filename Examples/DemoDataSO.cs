@@ -2,8 +2,8 @@
 
 namespace Champion
 {
-    [CreateAssetMenu(fileName = "PlayerData", menuName = "SO/Data/PlayerData")]
-    public class PlayerDataSO : BaseDataSO
+    [CreateAssetMenu(fileName = "DemoData", menuName = "Champion/DemoData")]
+    public class DemoDataSO : BaseDataSO
     {
         public TestPlayerProfile Profile;
         public TestPlayerInventory Inventory;
