@@ -1,3 +1,10 @@
+# [1.3.0](https://github.com/tien-champion/com.cp.storage.service/compare/v1.2.0...v1.3.0) (2026-07-30)
+
+
+### Features
+
+* - SaveAsync, Setup test, new draw Inspector ([edba384](https://github.com/tien-champion/com.cp.storage.service/commit/edba38441bdd7cadfc98a482f6413f7ca30486a2))
+
 # [1.2.0](https://github.com/tien-champion/com.cp.storage.service/compare/v1.1.1...v1.2.0) (2026-06-01)
 
 
